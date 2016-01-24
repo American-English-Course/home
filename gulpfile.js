@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var browserSync = require('browser-sync');
 var autoprefixer = require('gulp-autoprefixer');
-
+var reload = browserSync.reload;
 
 gulp.task('sass', function(){
   return gulp.src('scss/styles.scss')
@@ -18,8 +18,11 @@ gulp.task('sass', function(){
     }));
 });
 
+
 gulp.task('watch', ['browserSync', 'sass'], function (){
   gulp.watch('scss/**/*.scss', ['sass']);
+  gulp.watch("*.html").on("change", reload);
+  // gulp.watch('index.html', ['reload']);
   // Other watchers
 });
 

@@ -386,20 +386,20 @@ body {
   color: blue; }
 
 .courses-col {
-  padding: 15px 15px 15px 15px !important;
+  padding: 15px 15px 15px 15px;
   border: 1px solid #eeeeee; }
 
 .courses-line {
-  max-width: 100% !important;
-  border-color: #eeeeee !important;
-  margin-top: 30px !important;
-  margin-bottom: 30px !important; }
+  max-width: 100%;
+  border-color: #eeeeee;
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
 .courses-btn {
-  border-radius: 0px !important;
+  border-radius: 0px;
   background-color: #f05f40;
   color: white; }
 
 .about-line {
-  margin-top: 30px !important;
-  margin-bottom: 30px !important; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
